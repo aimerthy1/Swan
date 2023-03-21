@@ -1,5 +1,7 @@
 {
   "words": [
-    "antfu"
+    "antfu",
+    "treeshake",
+    "tsup"
   ]
 }
