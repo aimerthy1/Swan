@@ -7,4 +7,10 @@ export type PathAttributes = Attributes & { d: Array<Array<string | number>> }
 
 export type Context = ReturnType<typeof createContext>
 
-export type Transform = 'matrix' | 'translate' | 'scale' | 'rotate' | 'skewX' | 'skewY'
+export type Transform =
+  | 'matrix'
+  | 'translate'
+  | 'scale'
+  | 'rotate'
+  | 'skewX'
+  | 'skewY'

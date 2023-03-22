@@ -4,7 +4,11 @@ import type { Attributes, Context } from './types'
 
 // @TODO: use specific type instead of `Attributes`, for example: user must provide width in rect shape
 
-export const shape = <K extends keyof SVGElementTagNameMap>(type: K, context: Context, attributes: Attributes) => {
+export const shape = <K extends keyof SVGElementTagNameMap>(
+  type: K,
+  context: Context,
+  attributes: Attributes
+) => {
   const { group } = context
 
   const el = createSVGElement(type)
@@ -73,7 +77,10 @@ export const text = (context: Context, attributes: Attributes) => {
  * @param attributes
  * @returns
  */
-export const path = (context: Context, attributes: Attributes & { d: Array<Array<string | number>> }) => {
+export const path = (
+  context: Context,
+  attributes: Attributes & { d: Array<Array<string | number>> }
+) => {
   const { d } = attributes
   return shape('path', context, { ...attributes, d: d.flat().join(' ') })
 }

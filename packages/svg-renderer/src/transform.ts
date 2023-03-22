@@ -2,16 +2,28 @@ import { applyTransform, createSVGElement, mount } from './utils'
 
 import type { Context, Transform } from './types'
 
-export const transform = (type: Transform, context: Context, ...params: Array<string | number>) => {
+export const transform = (
+  type: Transform,
+  context: Context,
+  ...params: Array<string | number>
+) => {
   const { group } = context
   applyTransform(group, `${type}(${params.join(', ')})`)
 }
 
-export const translate = (context: Context, tx: string | number, ty: string | number) => {
+export const translate = (
+  context: Context,
+  tx: string | number,
+  ty: string | number
+) => {
   transform('translate', context, tx, ty)
 }
 
-export const scale = (context: Context, sx: string | number, sy: string | number) => {
+export const scale = (
+  context: Context,
+  sx: string | number,
+  sy: string | number
+) => {
   transform('scale', context, sx, sy)
 }
 

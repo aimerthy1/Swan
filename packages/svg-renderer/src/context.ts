@@ -1,6 +1,9 @@
 import { createSVGElement, mount } from './utils'
 
-export const createContext = (width: number | string, height: number | string) => {
+export const createContext = (
+  width: number | string,
+  height: number | string
+) => {
   const svg = createSVGElement('svg')
   svg.setAttribute('width', `${width}`)
   svg.setAttribute('height', `${height}`)
