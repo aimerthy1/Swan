@@ -1,7 +1,3 @@
 {
-  "words": [
-    "antfu",
-    "treeshake",
-    "tsup"
-  ]
+  "words": ["treeshake", "tsup"]
 }
