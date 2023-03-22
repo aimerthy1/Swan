@@ -1,0 +1,28 @@
+{
+  "name": "@swan/scale",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.29.1",
+  "description": "A chart library for visualization",
+  "author": "Tyler Roi <iherewithmyheart@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/tyr1dev",
+  "homepage": "https://github.com/tyr1dev/swan#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyr1dev/swan.git"
+  },
+  "bugs": "https://github.com/tyr1dev/swan/issues",
+  "keywords": [
+    "swan",
+    "charts",
+    "visualization"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm --minify --treeshake"
+  },
+  "dependencies": {
+    "@types/d3-scale": "^4.0.3",
+    "d3-scale": "^4.0.2"
+  }
+}
