@@ -17,7 +17,12 @@ importers:
       typescript: 5.0.2
 
   packages/coordinate:
-    specifiers: {}
+    specifiers:
+      '@swan/types': workspace:^0.0.0
+      '@swan/utils': workspace:^0.0.0
+    devDependencies:
+      '@swan/types': link:../types
+      '@swan/utils': link:../utils
 
   packages/geometry:
     specifiers: {}

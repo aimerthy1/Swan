@@ -1,9 +1,9 @@
 import { applyTransform, createSVGElement, mount } from '@swan/utils'
 
-import type { Context, Transform } from '@swan/types'
+import type { Context, SVGTransform } from '@swan/types'
 
 const transform = (
-  type: Transform,
+  type: SVGTransform,
   context: Context,
   ...params: Array<string | number>
 ) => {
