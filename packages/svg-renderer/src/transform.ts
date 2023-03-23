@@ -2,7 +2,7 @@ import { applyTransform, createSVGElement, mount } from './utils'
 
 import type { Context, Transform } from './types'
 
-export const transform = (
+const transform = (
   type: Transform,
   context: Context,
   ...params: Array<string | number>
