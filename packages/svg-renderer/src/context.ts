@@ -1,4 +1,4 @@
-import { createSVGElement, mount } from './utils'
+import { createSVGElement, mount } from '@swan/utils'
 
 export const createContext = (
   width: number | string,

@@ -1,5 +1,5 @@
 {
-  "name": "@swan/svg-renderer",
+  "name": "@swan/utils",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.29.1",
@@ -22,7 +22,6 @@
     "build": "tsup src/index.ts --dts --format esm --minify --treeshake"
   },
   "devDependencies": {
-    "@swan/types": "workspace:^0.0.0",
-    "@swan/utils": "workspace:^0.0.0"
+    "@swan/types": "workspace:^0.0.0"
   }
 }

@@ -1,6 +1,6 @@
-import { applyTransform, createSVGElement, mount } from './utils'
+import { applyTransform, createSVGElement, mount } from '@swan/utils'
 
-import type { Context, Transform } from './types'
+import type { Context, Transform } from '@swan/types'
 
 const transform = (
   type: Transform,

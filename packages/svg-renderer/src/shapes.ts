@@ -1,6 +1,6 @@
-import { applyAttributes, createSVGElement, mount } from './utils'
+import { applyAttributes, createSVGElement, mount } from '@swan/utils'
 
-import type { Attributes, Context } from './types'
+import type { Attributes, Context } from '@swan/types'
 
 // @TODO: use specific type instead of `Attributes`, for example: user must provide width in rect shape
 

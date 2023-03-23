@@ -31,11 +31,22 @@ importers:
     devDependencies:
       '@types/d3-scale': 4.0.3
 
-  packages/shared:
+  packages/svg-renderer:
+    specifiers:
+      '@swan/types': workspace:^0.0.0
+      '@swan/utils': workspace:^0.0.0
+    devDependencies:
+      '@swan/types': link:../types
+      '@swan/utils': link:../utils
+
+  packages/types:
     specifiers: {}
 
-  packages/svg-renderer:
-    specifiers: {}
+  packages/utils:
+    specifiers:
+      '@swan/types': workspace:^0.0.0
+    devDependencies:
+      '@swan/types': link:../types
 
 packages:
 

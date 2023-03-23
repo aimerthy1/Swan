@@ -1,7 +1,8 @@
 import { createContext } from './context'
 import { circle, line, path, rect, text } from './shapes'
 import { restore, rotate, save, scale, translate } from './transform'
-import type { Attributes, PathAttributes } from './types'
+
+import type { Attributes, PathAttributes } from '@swan/types'
 
 export const createRenderer = (
   width: string | number,

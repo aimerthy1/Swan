@@ -1,4 +1,4 @@
-import type { Attributes, SVGElements } from './types'
+import type { Attributes, SVGElements } from '@swan/types'
 
 /**
  * Why not use `type: keyof SVGElementTagNameMap` directly?
